@@ -7,6 +7,8 @@
         <link href="./css/navbar-top-fixed.css" rel="stylesheet">
         <link href="./css/carousel.css" rel="stylesheet">
         <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="./css/color.css" rel="stylesheet">
         <link rel="icon" href="./images/logo.png">
 
         <style>
@@ -29,11 +31,11 @@
         </style>
 
     </head>
-    <body font-family="Noto Sans TC",sans-serif>
-        <nav class="navbar navbar-expand-md navbar-light fixed-top b-c">
+    <body class="" font-family="Noto Sans TC",sans-serif>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top nav-fill yellow-c">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#" style="font-family:Noto Serif TC;">
-                    <img src="./images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                <img src="./images/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+                <a class="navbar-brand fs-4" href="#" style="font-family:Noto Serif TC;">
                     IPGIT 綠資學程系學會
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,47 +44,47 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                            <a class="nav-link active fs-5" aria-current="page" href="#">首頁&nbsp;</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                關於我們
+                            <a class="nav-link dropdown-toggle fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                關於我們&nbsp;
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="#">系學會章程</a></li>
-                              <li><a class="dropdown-item" href="#">系學會成員</a></li>
+                              <li><a class="dropdown-item fs-6" href="#">系學會章程</a></li>
+                              <li><a class="dropdown-item fs-6" href="#">系學會成員</a></li>
                               <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">直屬名單</a></li>
+                              <li><a class="dropdown-item fs-6" href="#">直屬名單</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                小教學
+                            <a class="nav-link dropdown-toggle fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                小教學&nbsp;
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item fs-6" href="#">Action</a></li>
+                              <li><a class="dropdown-item fs-6" href="#">Another action</a></li>
                               <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><a class="dropdown-item fs-6" href="#">Something else here</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">活動花絮</a>
+                            <a class="nav-link fs-5" href="#">活動花絮&nbsp;</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">聯絡我們</a>
+                            <a class="nav-link fs-5" href="#">聯絡我們&nbsp;</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="https://www.nttu.edu.tw/">學校首頁</a>
+                            <a class="nav-link fs-5" target="_blank" href="https://www.nttu.edu.tw/">學校首頁&nbsp;</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="https://git.nttu.edu.tw/">系網</a>
+                            <a class="nav-link fs-5" target="_blank" href="https://git.nttu.edu.tw/">系網&nbsp;</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="carousel" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -97,42 +99,74 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./images/首頁/1圖書館.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption">
+                <img src="./images/首頁/1圖書館.jpg" class="d-block w-100" alt="1">
+                <div class="carousel-caption white-c rounded-pill">
                   <h3>國立台東大學 綠色與資訊科技學士學位學程系學會</h3>
                   <p>National Taitung University<br>Interdisciplinary Program of Green and Information Technology.</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./images/首頁/2理工學院.jpg" class="d-block w-100" alt="...">
+                <img src="./images/首頁/2理工學院.jpg" class="d-block w-100" alt="2">
+                <div class="carousel-caption white-c rounded-pill">
+                  <h3>理工學院</h3>
+                </div>
               </div>
               <div class="carousel-item">
-                <img src="./images/首頁/3綠資日.jpg" class="d-block w-100" alt="...">
+                <img src="./images/首頁/3綠資日.jpg" class="d-block w-100" alt="3">
               </div>
               <div class="carousel-item">
-                <img src="./images/首頁/4吃鍋群眾.jpg" class="d-block w-100" alt="...">
+                <img src="./images/首頁/4吃鍋群眾.jpg" class="d-block w-100" alt="4">
               </div>
               <div class="carousel-item">
-                <img src="./images/首頁/5油嘴滑舌.jpg" class="d-block w-100" alt="...">
+                <img src="./images/首頁/5油嘴滑舌.jpg" class="d-block w-100" alt="5">
               </div>
               <div class="carousel-item">
-                <img src="./images/首頁/6烤肉肉.jpg" class="d-block w-100" alt="...">
+                <img src="./images/首頁/6烤肉肉.jpg" class="d-block w-100" alt="6">
               </div>
               <div class="carousel-item">
-                <img src="./images/首頁/7淨.jpg" class="d-block w-100" alt="...">
+                <img src="./images/首頁/7淨.jpg" class="d-block w-100" alt="7">
               </div>
               <div class="carousel-item">
-                <img src="./images/首頁/8理工病院.jpg" class="d-block w-100" alt="...">
+                <img src="./images/首頁/8理工病院.jpg" class="d-block w-100" alt="8">
               </div>
               <div class="carousel-item">
-                <img src="./images/首頁/9唇槍舌戰.jpg" class="d-block w-100" alt="...">
+                <img src="./images/首頁/9唇槍舌戰.jpg" class="d-block w-100" alt="9">
               </div>
               <div class="carousel-item">
-                <img src="./images/首頁/10綠資管迎新.jpg" class="d-block w-100" alt="...">
+                <img src="./images/首頁/10綠資管迎新.jpg" class="d-block w-100" alt="10">
               </div>
             </div>
         </div>
-        
+
+        <!--facebook messages 程式碼-->
+        <!-- Messenger 洽談外掛程式 Code -->
+        <div id="fb-root"></div>
+
+        <!-- Your 洽談外掛程式 code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+
+        <script>
+          var chatbox = document.getElementById('fb-customer-chat');
+          chatbox.setAttribute("page_id", "182045648976160");
+          chatbox.setAttribute("attribution", "biz_inbox");
+
+          window.fbAsyncInit = function() {
+            FB.init({
+              xfbml            : true,
+              version          : 'v11.0'
+            });
+          };
+
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        </script>
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFGWGL2YDJ"></script>
         <script>
