@@ -184,7 +184,7 @@
             .then(res => res.json())
             .then(res => {
               const wrap = document.getElementById('ig-iframe');
-              wrap.insertAdjacentHTML('afterbegin', index.html);
+              wrap.insertAdjacentHTML('afterbegin', res.html);
               instgrm.Embeds.process();
             })
           });
