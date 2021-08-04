@@ -172,18 +172,25 @@
     <script>
     const getToken = 'https://script.google.com/macros/s/AKfycbx5ztoVbGt4NOWnBj5Oe3aBotQ2GyWIZlOjnCnd7NjhkcAzZGAUE9tbLqDM3wE9Ku73vA/exec';
     const igUri = 'https://www.instagram.com/p/CQBbXbBDph4';
-    const hideCaption = false; // 要不要隱藏描述，true 隱藏、false 不隱藏
-    
+    const hideCaption = false; // 選填，要不要隱藏描述，true 隱藏、false 不隱藏，預設為 false
+    //const maxWidth = 600; // 選填，貼文的最大寬度是多少
+
     fetch(getToken)
-      .then(response => response.json())
-      .then(response => response.access_token)
-      .then(token => {
-      fetch(`https://graph.facebook.com/v11.0/instagram_oembed?url=${igUri}&access_token=${token}&hidecaption=${hideCaption}`)
-        .then(response => response.json())
-        .then(response => {
-          console.log(response);
-        })
-      });
+      .then(res => res.json())
+      .then(res => {
+        const token = res.access_token;
+        fetch(`https://graph.facebook.com/v11.0/instagram_oembed?url=${igUri}&access_token=${token}&hidecaption=${hideCaption}`)
+          .then(res => res.json())
+          .then(res => {
+            const wrap = document.getElementById('ig-iframe');
+            wrap.insertAdjacentHTML('afterbegin', res.html);
+            instgrm.Embeds.process();
+          }).catch(err => {
+            throw Error(e)
+          })
+        }).catch(err => {
+          throw Error(e)
+        });
     </script>
 
     <script>
