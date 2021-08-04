@@ -169,8 +169,22 @@
     </div>
 
     <!--instagram-->
-    <div id="ig-iframe"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div id="ig-iframe1"></div>
+        </div>
+        <div class="col">
+          <div id="ig-iframe2"></div>
+        </div>
+        <div class="col">
+          <div id="ig-iframe3"></div>
+        </div>
+      </div>
+    </div>
+    
     <script>
+      //貼文1
       const getToken = 'https://script.google.com/macros/s/AKfycbx5ztoVbGt4NOWnBj5Oe3aBotQ2GyWIZlOjnCnd7NjhkcAzZGAUE9tbLqDM3wE9Ku73vA/exec';
       const igUri = 'https://www.instagram.com/p/CQBbXbBDph4';
       const hideCaption = false; // 選填，要不要隱藏描述，true 隱藏、false 不隱藏，預設為 false
@@ -183,7 +197,45 @@
           fetch(`https://graph.facebook.com/v11.0/instagram_oembed?url=${igUri}&access_token=${token}&hidecaption=${hideCaption}&maxwidth=${maxWidth}&omitscript=true`)
             .then(res => res.json())
             .then(res => {
-              const wrap = document.getElementById('ig-iframe');
+              const wrap = document.getElementById('ig-iframe1');
+              wrap.insertAdjacentHTML('afterbegin', res.html);
+              instgrm.Embeds.process();
+            })
+          });
+      
+      //貼文2
+      const getToken = 'https://script.google.com/macros/s/AKfycbx5ztoVbGt4NOWnBj5Oe3aBotQ2GyWIZlOjnCnd7NjhkcAzZGAUE9tbLqDM3wE9Ku73vA/exec';
+      const igUri = 'https://www.instagram.com/p/COm_g6_j5Ok';
+      const hideCaption = false; // 選填，要不要隱藏描述，true 隱藏、false 不隱藏，預設為 false
+      const maxWidth = 400; // 選填，貼文的最大寬度是多少
+
+      fetch(getToken)
+        .then(res => res.json())
+        .then(res => {
+          const token = res.access_token;
+          fetch(`https://graph.facebook.com/v11.0/instagram_oembed?url=${igUri}&access_token=${token}&hidecaption=${hideCaption}&maxwidth=${maxWidth}&omitscript=true`)
+            .then(res => res.json())
+            .then(res => {
+              const wrap = document.getElementById('ig-iframe2');
+              wrap.insertAdjacentHTML('afterbegin', res.html);
+              instgrm.Embeds.process();
+            })
+          });
+      
+      //貼文3
+      const getToken = 'https://script.google.com/macros/s/AKfycbx5ztoVbGt4NOWnBj5Oe3aBotQ2GyWIZlOjnCnd7NjhkcAzZGAUE9tbLqDM3wE9Ku73vA/exec';
+      const igUri = 'https://www.instagram.com/p/COcLQ7BDb2x';
+      const hideCaption = false; // 選填，要不要隱藏描述，true 隱藏、false 不隱藏，預設為 false
+      const maxWidth = 400; // 選填，貼文的最大寬度是多少
+
+      fetch(getToken)
+        .then(res => res.json())
+        .then(res => {
+          const token = res.access_token;
+          fetch(`https://graph.facebook.com/v11.0/instagram_oembed?url=${igUri}&access_token=${token}&hidecaption=${hideCaption}&maxwidth=${maxWidth}&omitscript=true`)
+            .then(res => res.json())
+            .then(res => {
+              const wrap = document.getElementById('ig-iframe3');
               wrap.insertAdjacentHTML('afterbegin', res.html);
               instgrm.Embeds.process();
             })
