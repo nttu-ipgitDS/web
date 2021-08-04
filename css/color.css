@@ -44,3 +44,8 @@
 .green-c{
     background-color: #87D4AE;
 }
+
+.blue2-c{
+    background-color: #0093E9;
+    background-image: linear-gradient(349deg, #0093E9 0%, #80D0C7 74%);
+}
