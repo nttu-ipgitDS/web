@@ -1,4 +1,4 @@
-//變數
+//news變數
 const news1 = "./news/news1.html"; const text1 = "系學會新網站成立了!"; const date1 = "2021/07/31";
 const news2 = "./news/news2.html"; const text2 = ""; const date2 = "";
 const news3 = "./news/news3.html"; const text3 = ""; const date3 = "";
