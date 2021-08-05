@@ -3,14 +3,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NTTU IPGIT 綠資學程系學會</title>
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/navbar-top-fixed.css" rel="stylesheet">
-    <link href="../css/carousel.css" rel="stylesheet">
-    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/navbar-top-fixed.css" rel="stylesheet">
+    <link href="../../css/carousel.css" rel="stylesheet">
+    <script src="../../js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../js/news.js"></script>
-    <link rel="stylesheet" href="../css/color.css" rel="stylesheet">
-    <link rel="icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../../css/color.css" rel="stylesheet">
+    <link rel="icon" href="../../images/logo.png">
 
     <style>
       .bd-placeholder-img {
@@ -35,8 +34,8 @@
     <!--導航列-->
     <nav class="navbar navbar-expand-md navbar-light fixed-top nav-fill yellow-c">
       <div class="container-fluid">
-        <img src="../images/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
-        <a class="navbar-brand fs-4" href="../index.html" style="font-family:Noto Serif TC;">
+        <img src="../../images/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+        <a class="navbar-brand fs-4" href="../../index.html" style="font-family:Noto Serif TC;">
           IPGIT 綠資學程系學會
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,15 +44,15 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ms-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active fs-5" aria-current="page" href="../index.html">首頁&nbsp;</a>
+              <a class="nav-link active fs-5" aria-current="page" href="../../index.html">首頁&nbsp;</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 關於我們&nbsp;
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item fs-6" href="./aboutus1.html">系學會章程</a></li>
-              <li><a class="dropdown-item fs-6" href="./member/110.html">系學會成員</a></li>
+              <li><a class="dropdown-item fs-6" href="../aboutus1.html">系學會章程</a></li>
+              <li><a class="dropdown-item fs-6" href="../member/110.html">系學會成員</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item fs-6" href="https://www.instagram.com/p/CFdz11-j-KZ">直屬名單</a></li>
               </ul>
@@ -70,7 +69,7 @@
                 </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-5" href="./album.html">活動花絮&nbsp;</a>
+              <a class="nav-link fs-5" href="../album.html">活動花絮&nbsp;</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fs-5" target="_blank" href="https://www.nttu.edu.tw/">學校首頁&nbsp;</a>
@@ -98,7 +97,7 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="../images/首頁/1圖資館.JPG" class="d-block w-100" alt="1">
+          <img src="../../images/首頁/1圖資館.JPG" class="d-block w-100" alt="1">
           <div class="carousel-caption white-c rounded-pill">
             <h3>國立台東大學 綠色與資訊科技學士學位學程系學會</h3>
             <p>National Taitung University<br>Interdisciplinary Program of Green and Information Technology.</p>
@@ -160,20 +159,26 @@
 
     <!--News-->
     <div class="container text-start">
-      <p style="font-size: 70px;color:#FFCB3C;font-weight:bold;">News</p>
       <div class="text-center">
-        <button type="button" class="btn btn-lg btn-outline-primary white-c" style="font-weight: bold;" onclick="news(1)">全部</button>
-        <button type="button" class="btn btn-lg btn-outline-primary white-c" style="font-weight: bold;" onclick="news(2)">活動</button>
-        <button type="button" class="btn btn-lg btn-outline-primary white-c" style="font-weight: bold;" onclick="news(3)">花絮</button>
+        <a href="../../index.html">
+          <button type="button" class="btn btn-lg btn-outline-primary white-c" style="font-weight: bold;">回首頁</button>
+        </a>
+        <a href="../news.html">
+          <button type="button" class="btn btn-lg btn-outline-primary white-c" style="font-weight: bold;">回佈告欄</button>
+        </a>
       </div>
+      
       <br>
-      <div class="rounded white-c" id = "shownews"></div>
+      <div class="rounded white-c">
+        <p style="font-size: 50px;color: black;font-weight:bold;">系學會新網站成立了!</p><hr>
+        <p class="text-start" style="font-size: 30px;color:black; text-decoration:none;">系學會新網站成立了!</p><br><p class="text-end" style="color: #FFCB3C;">2021/07/31</p><br>
+      </div>
     </div>
     <br>
     <footer class="container fs-4" style="background-color: bisque; width: 100%;">
       <div class="row gx-5">
         <div class="col">
-          <img src="../images/logo.png" width="100" height="100" class="d-inline-block align-top" alt="">
+          <img src="../../images/logo.png" width="100" height="100" class="d-inline-block align-top" alt="">
           <p style="color:black;">©IPGIT綠資學程系學會</p>
         </div>
         <div class="col">
