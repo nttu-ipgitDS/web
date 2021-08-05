@@ -38,17 +38,19 @@ try{
     console.log("請自己研究")
 }
 
+//下面else if 裡面的shownews.innerHTML要進行分類 num == 1 是活動項、num == 2 是相簿項
+//要確實公告相簿已經上傳
 function news(num){
     if(num == 1){
         //news變數
         const shownews = document.getElementById("shownews");
         shownews.innerHTML = newsnews1 + newsnews2 + newsnews3 + newsnews4 + newsnews5 + newsnews6 + newsnews7 + newsnews8 + newsnews9 + newsnews10;
     }else if(num == 2){
-        //news變數
+        //活動
         const shownews = document.getElementById("shownews");
         shownews.innerHTML = '<a href="./web/news.html" target="_blank" style="font-size: 20px;color:black; text-decoration:none;">hello</a><br><p style="color: #FFCB3C;">2021/7/31</p><br>';
     }else if(num == 3){
-        //news變數
+        //相簿
         const shownews = document.getElementById("shownews");
         shownews.innerHTML = '<a href="./web/news.html" target="_blank" style="font-size: 20px;color:black; text-decoration:none;">hello</a><br><p style="color: #FFCB3C;">2021/7/31</p><br>';
     };
