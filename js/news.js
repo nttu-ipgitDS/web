@@ -1,6 +1,6 @@
 //news變數
-const news1 = "./news/news1.html"; const text1 = "系學會新網站成立了!"; const date1 = "2021/07/31";
-const news2 = "./news/news2.html"; const text2 = ""; const date2 = "";
+const news1 = "./news/news1.html"; const text1 = "歡迎參加新生茶會!"; const date1 = "2021/08/22";
+const news2 = "./news/news2.html"; const text2 = "系學會新網站成立了!"; const date2 = "2021/07/31";
 const news3 = "./news/news3.html"; const text3 = ""; const date3 = "";
 const news4 = "./news/news4.html"; const text4 = ""; const date4 = "";
 const news5 = "./news/news5.html"; const text5 = ""; const date5 = "";
@@ -10,8 +10,8 @@ const news8 = "./news/news8.html"; const text8 = ""; const date8 = "";
 const news9 = "./news/news9.html"; const text9 = ""; const date9 = "";
 const news10 = "./news/news10.html"; const text10 = ""; const date10 = "";
 //首頁
-const indexnews1 = '<a href="./web/news.html" target="_blank" style="font-size: 20px;color:black; text-decoration:none;">系學會新網站成立了!</a><br><p style="color: #FFCB3C;">2021/7/31</p><br>';
-const indexnews2 = '<a href="./web/news.html" target="_blank" style="font-size: 20px;color:black; text-decoration:none;"></a><br><p style="color: #FFCB3C;"></p><br>';
+const indexnews1 = '<a href="./web/news.html" target="_blank" style="font-size: 20px;color:black; text-decoration:none;">歡迎參加新生茶會!</a><br><p style="color: #FFCB3C;">2021/8/22</p><br>';
+const indexnews2 = '<a href="./web/news.html" target="_blank" style="font-size: 20px;color:black; text-decoration:none;">系學會新網站成立了!</a><br><p style="color: #FFCB3C;">2021/7/31</p><br>';
 const indexnews3 = '<a href="./web/news.html" target="_blank" style="font-size: 20px;color:black; text-decoration:none;"></a><br><p style="color: #FFCB3C;"></p><br>';
 const indexnews4 = '<a href="./web/news.html" target="_blank" style="font-size: 20px;color:black; text-decoration:none;"></a><br><p style="color: #FFCB3C;"></p><br>';
 const indexnews5 = '<a href="./web/news.html" target="_blank" style="font-size: 20px;color:black; text-decoration:none;"></a><br><p style="color: #FFCB3C;"></p><br>';
