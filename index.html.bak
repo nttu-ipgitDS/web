@@ -114,7 +114,7 @@
           <img src="./images/首頁/4淨起來.jpg" class="d-block w-100" alt="4">
         </div>
         <div class="carousel-item">
-          <img src="./images/首頁/鍋燃怕火.jpg" class="d-block w-100" alt="5">
+          <img src="./images/首頁/鍋燃怕火.jpeg" class="d-block w-100" alt="5">
         </div>
         <div class="carousel-item">
           <img src="./images/首頁/抽直屬.jpg" class="d-block w-100" alt="6">
@@ -191,11 +191,11 @@
       
       //每次更新需要修改這裡的instagram網頁
       //貼文1
-      const igUri1 = 'https://www.instagram.com/p/CXaQngIPKQu/?utm_source=ig_web_copy_link';
+      const igUri1 = 'https://www.instagram.com/p/CamF1RkveWf/';
       //貼文2
       const igUri2 = 'https://www.instagram.com/p/CXYrZ-Qv2HX/?utm_source=ig_web_copy_link';
       //貼文3
-      const igUri3 = 'https://www.instagram.com/p/CXYTt13vsrs/?utm_source=ig_web_copy_link';
+      const igUri3 = 'https://www.instagram.com/p/CXaQngIPKQu/?utm_source=ig_web_copy_link';
       
       
       fetch(getToken)
