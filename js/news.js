@@ -45,7 +45,7 @@ function news(num){
         //news變數
         const shownews = document.getElementById("shownews");
         shownews.innerHTML = newsnews1 + newsnews2 + newsnews3 + newsnews4 + newsnews5 + newsnews6 + newsnews7 + newsnews8 + newsnews9 + newsnews10;
-    }else if(num == 2){
+    }/*else if(num == 2){
         //活動
         const shownews = document.getElementById("shownews");
         shownews.innerHTML = '<a href="./web/news.html" target="_blank" style="font-size: 20px;color:black; text-decoration:none;">hello</a><br><p style="color: #FFCB3C;">2021/7/31</p><br>';
@@ -53,5 +53,5 @@ function news(num){
         //相簿
         const shownews = document.getElementById("shownews");
         shownews.innerHTML = '<a href="./web/news.html" target="_blank" style="font-size: 20px;color:black; text-decoration:none;">hello</a><br><p style="color: #FFCB3C;">2021/7/31</p><br>';
-    };
+    };*/
 };
