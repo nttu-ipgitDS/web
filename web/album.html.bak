@@ -183,7 +183,26 @@
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           
-		  
+		  		  <div class="col">
+            <div class="card shadow-sm">
+              <a href="https://photos.google.com/album/AF1QipNAO-uLOZvs_aE7LW9WHbdOvtyF7qRuVp31ZGXa" target="_blank">
+                <img src="../images/相簿/20220509.jpg" width=100% height="250">
+              </a>
+              <div class="card-body" style="background-color: #FAEEC4;">
+                <p class="card-text"><h5 style="font-weight: bold;">20220509理工週</h5>為期一個禮拜的闖關，由六個系一起舉辦的理工週</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://photos.google.com/album/AF1QipNAO-uLOZvs_aE7LW9WHbdOvtyF7qRuVp31ZGXa" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">查看相簿</button>
+                    </a>
+                  </div>
+                  <small class="text-muted">2022/05/09</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
 		  <div class="col">
             <div class="card shadow-sm">
               <a href="https://photos.app.goo.gl/JNmBpQnGTWK86wt19" target="_blank">
